@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elegant Home's - Find your dream house</title>
+
+  <!-- 
+    - favicon
+  -->
+  <!-- <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml"> -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon//site.webmanifest">
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <!-- 
+    - #HEADER
+  -->
+
+
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white">
+    <img src="./assets/images/logo.png" alt="Homeverse logo" width="200">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ml-auto">
+        <a class="nav-item nav-link active" href="#home">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="#about">Features</a>
+        <a class="nav-item nav-link" href="#service">Salient Features</a>
+        <a class="nav-item nav-link" href="#payment">Payment Schedule</a>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <span>A project of <b>MAN'S DEVELOPERS KARACHI</b></span>
+            <!-- <p class="hero-subtitle">
+              <ion-icon name="home"></ion-icon>
+
+              <span>A project of MAN'S DEVELOPERS KARACHI</span>
+            </p> -->
+
+            <h2 class="h1 hero-title">Book You Plot Now</h2>
+
+            <p class="hero-text">
+              We offer affordable bungalows of 100 | 200 | 400 square yard's.
+            </p>
+
+            <!-- <button class="btn">Book Now</button> -->
+            <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
+              Book Now
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+           <div class="modal-dialog" role="document">
+               <div class="modal-content">
+                   <div class="modal-header">
+                       <h5 class="modal-title" id="exampleModalLabel">Contact Us</h5>
+                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                           <span aria-hidden="true">&times;</span>
+                       </button>
+                   </div>
+                   <div class="modal-body">
+                    <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                      <input type="hidden" name="access_key" value="f9d1069d-d02a-4959-9f4c-d8193c990084">
+                      <div class="mb-3">
+                          <label for="formGroupExampleInput" class="form-label">Name</label>
+                          <input type="text" name="name" class="form-control" id="formGroupExampleInput"
+                                 placeholder="Enter your name">
+                          <div id="nameError" class="text-danger"></div>
+                      </div>
+                      <div class="mb-3">
+                          <label for="formGroupExampleInput2" class="form-label">Email</label>
+                          <input type="text" name="email" class="form-control" id="formGroupExampleInput2"
+                                 placeholder="Enter your email">
+                          <div id="emailError" class="text-danger"></div>
+                      </div>
+                      <div class="mb-3">
+                          <label for="formGroupExampleInput3" class="form-label">Contact Number</label>
+                          <input type="text" name="number" class="form-control" id="formGroupExampleInput3"
+                                 placeholder="Enter your number">
+                          <div id="numberError" class="text-danger"></div>
+                      </div>
+                      <div class="mb-3">
+                          <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                          <textarea name="message" class="form-control" id="exampleFormControlTextarea1"
+                                    rows="3"></textarea>
+                          <!-- <div id="messageError" class="text-danger"></div> -->
+                      </div>
+                      <div class="mb-3">
+                        <label for="plotSize" class="form-label">Plot Size</label>
+                        <select name="plotSize" id="plotSize" class="form-control">
+                            <option value="100">100 yards</option>
+                            <option value="200">200 yards</option>
+                            <option value="400">400 yards</option>
+                        </select>
+                    </div>
+                      <button type="submit" class="btn">Submit</button>
+                  </form>
+                   </div>
+               </div>
+           </div>
+       </div>
+       
+
+          </div>
+
+          <figure class="hero-banner">
+            <img
+              src="https://img.freepik.com/premium-photo/contemporary-house-white-background-modern-house-3d-model_932730-373.jpg"
+              alt="Modern house model" class="w-100">
+          </figure>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="about" id="about">
+        <div class="container">
+
+          <figure class="about-banner">
+            <img src="./assets/images/about-banner-1.png" alt="House interior">
+
+            <img src="./assets/images/about-banner-2.jpg" alt="House interior" class="abs-img">
+          </figure>
+
+          <div class="about-content">
+
+            <p class="section-subtitle">Features</p>
+
+            <h2 class="h2 section-title">Booking Start From PKR.200,000</h2>
+
+            <p class="about-text">
+              Elegant Home's Modern Living Concepts.
+            </p>
+
+            <ul class="about-list">
+
+              <li class="about-item">
+                <div class="about-item-icon">
+                  <ion-icon name="sunny-outline"></ion-icon>
+                </div>
+                <p class="about-item-text">3KVA/5KVA Solar Power Generation System</p>
+              </li>
+
+              <li class="about-item">
+                <div class="about-item-icon">
+                  <ion-icon name="hammer-outline"></ion-icon>
+                </div>
+                <p class="about-item-text">Titles Flooring</p>
+              </li>
+
+              <li class="about-item">
+                <div class="about-item-icon">
+                  <ion-icon name="water-outline"></ion-icon>
+                </div>
+                <p class="about-item-text">Titles Bathroom</p>
+              </li>
+
+              <li class="about-item">
+                <div class="about-item-icon">
+                  <ion-icon name="construct-outline"></ion-icon>
+                </div>
+                <p class="about-item-text">With High Quality Sanitary Fitting</p>
+              </li>
+
+              <li class="about-item">
+                <div class="about-item-icon">
+                  <ion-icon name="water-outline"></ion-icon>
+                </div>
+                <p class="about-item-text">Waterproof Door Panels</p>
+              </li>
+
+              <li class="about-item">
+                <div class="about-item-icon">
+                  <ion-icon name="color-palette-outline"></ion-icon>
+                </div>
+                <p class="about-item-text">Aluminum Window With Tinted Glass</p>
+              </li>
+
+            </ul>
+
+
+            <p class="callout">
+              "Leave the rental house. Fulfill your dream of owning a home with easy monthly installments."
+            </p>
+
+            <a href="#service" class="btn">Salient Features</a>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="service" id="service">
+        <div class="container">
+
+          <p class="section-subtitle">Salient Features</p>
+
+          <h2 class="h2 section-title">Our Main Focus</h2>
+
+          <ul class="service-list">
+
+            <li>
+              <div class="service-card">
+                <div class="card-icon">
+                  <img src="./assets/images/service-1.png" alt="Service icon">
+                </div>
+                <h3 class="h3 card-title">
+                  <a href="#" style="text-decoration: none;">25 Minutes Drive From Jinnah Airport, Karachi.</a>
+                </h3>
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+                <div class="card-icon">
+                  <img src="./assets/images/service-2.png" alt="Service icon">
+                </div>
+                <h3 class="h3 card-title">
+                  <a href="#" style="text-decoration: none;">2 KM Dhabije Special Economic Zone.</a>
+                </h3>
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+                <div class="card-icon">
+                  <img src="./assets/images/service-3.png" alt="Service icon">
+                </div>
+                <h3 class="h3 card-title">
+                  <a href="#" style="text-decoration: none;">6 KM Before DHA Phase IX & X</a>
+                </h3>
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+                <div class="card-icon">
+                  <img src="./assets/images/service-3.png" alt="Service icon">
+                </div>
+                <h3 class="h3 card-title">
+                  <a href="#" style="text-decoration: none;">5 KM Education City.</a>
+                </h3>
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+                <div class="card-icon">
+                  <img src="./assets/images/service-3.png" alt="Service icon">
+                </div>
+                <h3 class="h3 card-title">
+                  <a href="#" style="text-decoration: none;">4 KM Gulshan-e-Hadeed.</a>
+                </h3>
+              </div>
+            </li>
+
+          </ul>
+
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #PROPERTY
+      -->
+
+
+
+
+
+      <!-- 
+        - #FEATURES
+      -->
+
+
+      <section class="features" id="payment">
+        <div class="container">
+          <p class="section-subtitle">Payment Schedule</p>
+          <h2 class="h2 section-title">Plot Features</h2>
+          <ul class="features-list">
+            <li>
+              <a href="#" class="features-card" style="text-decoration: none;">
+                <div class="card-icon">
+                  <ion-icon name="home-outline"></ion-icon>
+                </div>
+                <h3 class="card-title">
+                  <h5 class="card-title">100 Yards Plot</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Features:</h6>
+                  <ul class="features-text">
+                    <!-- <li>Bathroom</li>
+                    <li>Washing area</li>
+                    <li>12x12 Bathroom</li>
+                    <li>12x12 Bedroom</li>
+                    <li>11x18 Lounge</li>
+                    <li>11x7 Kitchen</li>
+                    <li>12x12 Area</li>
+                    <li>12x12 Drawing Room</li> -->
+                    <img class="yards" src="./assets/images/100yards.png" alt="" width="230">
+                  </ul>
+                  <button type="button" class="btn" data-toggle="modal" data-target="#paymentSchedule100">Payment
+                    Schedule</button>
+
+                </h3>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="features-card" style="text-decoration: none;">
+                <div class="card-icon">
+                  <ion-icon name="home-outline"></ion-icon>
+                </div>
+                <h3 class="card-title">
+                  <h5 class="card-title">200 Yards Plot</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Features:</h6>
+                  <ul class="features-text">
+                    <!-- <li>Store room</li>
+                    <li>7x6 Washing area</li>
+                    <li>12.5x14.5 Bedroom</li>
+                    <li>12.5x14.5 Bedroom</li>
+                    <li>19x13 Lounge</li>
+                    <li>8x13 Kitchen</li>
+                    <li>16x14 Drawing Room</li>
+                    <li>20x12 Parking area</li>
+                    <li>Garden</li> -->
+
+                    <img class="yards" src="./assets/images/200yards.png" alt="" width="230" height="335">
+
+                  </ul>
+
+                  <button type="button" class="btn" data-toggle="modal" data-target="#paymentSchedule200">Payment
+                    Schedule</button>
+                </h3>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="features-card" style="text-decoration: none;">
+                <div class="card-icon">
+                  <ion-icon name="home-outline"></ion-icon>
+                </div>
+                <h3 class="card-title">
+                  <h5 class="card-title">400 Yards Plot</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Features:</h6>
+                  <ul class="features-text">
+                    <!-- <li>8x8 Washroom</li>
+                    <li>7x6 Washing area</li>
+                    <li>15x15 Bedroom</li>
+                    <li>15x15 Bedroom</li>
+                    <li>16x22 Lounge</li>
+                    <li>10x20 Lounge</li>
+                    <li>15x11 Kitchen</li>
+                    <li>Store Room</li>
+                    <li>7x7 Washroom</li>
+                    <li>12x12 Bedroom</li>
+                    <li>15x16 Garden</li> -->
+                    <img class="yards" src="./assets/images/400yards.png" alt="" width="230">
+                  </ul>
+                  <button type="button" class="btn" data-toggle="modal" data-target="#paymentSchedule400">Payment
+                    Schedule</button>
+                </h3>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Modal for 100 Yards Payment Schedule -->
+      <div class="modal fade" id="paymentSchedule100" tabindex="-1" role="dialog"
+        aria-labelledby="paymentSchedule100Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title btn" id="paymentSchedule100Label">Payment Schedule for 100 Yards Plot</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <table class="table table-striped">
+                <tbody>
+                  <tr>
+                    <th scope="row">Booking:</th>
+                    <td>300,000</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Confirmation:</th>
+                    <td>200,000</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Allocation:</th>
+                    <td>200,000</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Monthly Installment:</th>
+                    <td>48 x 50,000 = 24,00,000</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">On Plinth:</th>
+                    <td>300,000</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">On Slab Casting:</th>
+                    <td>300,000</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">On Finishing:</th>
+                    <td>300,000</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Expected Loan:</th>
+                    <td>15,00,000</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Total:</th>
+                    <td>55,00,000</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal for 200 Yards Payment Schedule -->
+      <div class="modal fade" id="paymentSchedule200" tabindex="-1" role="dialog"
+        aria-labelledby="paymentSchedule200Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title btn" id="paymentSchedule200Label">Payment Schedule for 200 Yards Plot</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <table class="table table-striped">
+                <tbody>
+                  <tr>
+                    <th scope="row">Booking:</th>
+                    <td>400,000</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Confirmation:</th>
+                    <td>300,000</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Allocation:</th>
+                    <td>300,000</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Monthly Installment:</th>
+                    <td>48 x 65,000 = 31,20,000</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">On Plinth:</th>
+                    <td>300,000</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">On Slab Casting:</th>
+                    <td>500,000</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">On Finishing:</th>
+                    <td>580,000</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Expected Loan:</th>
+                    <td>20,00,000</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Total:</th>
+                    <td>75,00,000</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal for 300 Yards Payment Schedule -->
+      <div class="modal fade" id="paymentSchedule400" tabindex="-1" role="dialog"
+        aria-labelledby="paymentSchedule300Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title btn" id="paymentSchedule300Label">Payment Schedule for 400 Yards Plot</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <table class="table table-striped">
+                <tbody>
+                  <tr>
+                    <th scope="row">Booking:</th>
+                    <td>600,000/-</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Confirmation:</th>
+                    <td>500,000/-</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Allocation:</th>
+                    <td>500,000/-</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Monthly Installment:</th>
+                    <td>48 x 85,000 = 40,80,000/-</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">On Plinth:</th>
+                    <td>700,000/-</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">On Slab Casting:</th>
+                    <td>700,000/-</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">On Finishing:</th>
+                    <td>920,000/-</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Expected Loan:</th>
+                    <td>30,00,000/-</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Total:</th>
+                    <td>11,00,000/-</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+      <!-- 
+        - #BLOG
+      -->
+
+
+
+
+
+
+
+      <!-- 
+        - #CTA
+      -->
+
+
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <!-- <img src="./assets/images/logo-light.png" alt="Homeverse logo"> -->
+          </a>
+
+          <p class="footer-list-title">About Us</p>
+          <p class="section-text">
+            <li class="text-justify">
+              Presenting a 2 & 3 Bedrooms Luxurious House
+              On MDA Scheme 1 Government Housing Society
+              with a down payment of just 300,000 PKR and a
+              Total Payment of 5,500,000 PKR.
+            </li>
+            <li class="pt-5 text-justify">
+              Introducing a new living concept of luxurious life
+              with a self-generation electricity plant system &
+              fully covered by TAKAFUL (Islamic Insurance).
+            </li>
+
+          </p>
+
+
+        </div>
+
+        <div class="footer-brand pl-5">
+
+          <a href="#" class="logo">
+            <!-- <img src="./assets/images/logo-light.png" alt="Homeverse logo"> -->
+          </a>
+
+          <p class="section-text">
+            FOR BOOKING AND DETAILS </p>
+
+          <ul class="contact-list">
+
+
+
+            <li>
+              <a href="tel:+0123456789" class="contact-link" style="text-decoration: none;">
+                <ion-icon name="call-outline"></ion-icon>
+                <span> 0336-9949499</span>
+              </a>
+            </li>
+            <li>
+              <a href="tel:+0123456789" class="contact-link" style="text-decoration: none;">
+                <ion-icon name="call-outline"></ion-icon>
+                <span>0312-2141099</span>
+              </a>
+            </li>
+            <li>
+              <a href="tel:+0123456789" class="contact-link" style="text-decoration: none;">
+                <ion-icon name="call-outline"></ion-icon>
+                <span> 0336-9949488</span>
+              </a>
+            </li>
+            <li>
+              <a href="tel:+0123456789" class="contact-link" style="text-decoration: none;">
+                <ion-icon name="call-outline"></ion-icon>
+                <span>0347-2975047</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="contact-link" style="text-decoration: none;">
+                <ion-icon name="location-outline"></ion-icon>
+
+                <address>MDA scheme 1 sector 9</address>
+              </a>
+            </li>
+
+            <li>
+              <a href="mailto:contact@homeverse.com" class="contact-link" style="text-decoration: none;">
+                <ion-icon name="mail-outline"></ion-icon>
+
+                <span>elegant.homes09@gmail.com</span>
+              </a>
+            </li>
+
+          </ul>
+
+
+
+        </div>
+
+        <div class="footer-link-box">
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title">Quick Links</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Features</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Salient Features</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Payment Schedule</a>
+            </li>
+
+
+          </ul>
+
+
+
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2024 <a href="#">Elegant Home's</a>. All Rights Reserved
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+
+    <script>
+      document.getElementById('contactForm').addEventListener('submit', function (event) {
+          // Reset previous errors
+          document.getElementById('nameError').textContent = '';
+          document.getElementById('emailError').textContent = '';
+          document.getElementById('numberError').textContent = '';
+          // document.getElementById('messageError').textContent = '';
+  
+          // Validation logic
+          var name = document.getElementById('formGroupExampleInput').value.trim();
+          var email = document.getElementById('formGroupExampleInput2').value.trim();
+          var number = document.getElementById('formGroupExampleInput3').value.trim();
+          // var message = document.getElementById('exampleFormControlTextarea1').value.trim();
+  
+          if (name === '') {
+              document.getElementById('nameError').textContent = 'Name cannot be empty';
+              event.preventDefault();
+          }
+  
+          if (email === '') {
+              document.getElementById('emailError').textContent = 'Email cannot be empty';
+              event.preventDefault();
+          }
+  
+          if (number === '') {
+              document.getElementById('numberError').textContent = 'Contact number cannot be empty';
+              event.preventDefault();
+          }
+  
+          // if (message === '') {
+          //     document.getElementById('messageError').textContent = 'Message cannot be empty';
+          //     event.preventDefault();
+          // }
+      });
+  </script>
+
+</body>
+
+</html>
