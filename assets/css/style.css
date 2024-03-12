@@ -875,7 +875,9 @@ button, a { transition: var(--transition); }
 
 
 
-
+.yards{
+  width: 100px;
+}
 
 /*-----------------------------------*\
   #FOOTER
@@ -884,7 +886,7 @@ button, a { transition: var(--transition); }
 .footer {
   background: var(--raisin-black-1);
   color: var(--white);
-  margin-bottom: 68px;
+  /* margin-bottom: 68px; */
 }
 
 .footer .container { padding-inline: 30px; }
@@ -1099,8 +1101,6 @@ button, a { transition: var(--transition); }
 
 
 
-
-
 /**
  * responsive for larger than 768px screen
  */
@@ -1247,8 +1247,6 @@ button, a { transition: var(--transition); }
   .container { max-width: 970px; }
 
   .btn { padding: 15px 40px; }
-
-
 
 
   /**
