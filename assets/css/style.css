@@ -25,10 +25,10 @@
   --raisin-black-1: hsl(227, 29%, 13%);
   --raisin-black-2: hsl(229, 17%, 19%);
   --yellow-green: hsl(89, 72%, 45%);
-  --orange-soda: rgb(2, 2, 79);
+  --orange-soda: rgb(238, 75, 43);
   --cultured-1: hsl(0, 0%, 93%);
   --cultured-2: hsl(192, 24%, 96%);
-  --misty-rose: rgb(223, 223, 245);
+  --misty-rose: rgb(235, 207, 202);
   --alice-blue: hsl(210, 100%, 97%);
   --seashell: rgb(223, 223, 245);
   --cadet: hsl(200, 15%, 43%);
@@ -78,7 +78,11 @@
 
 
 
-
+.card-shadow{
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  border-radius: 15px;
+}
 
 /*-----------------------------------*\
   #RESET
@@ -876,7 +880,7 @@ button, a { transition: var(--transition); }
 
 
 .yards{
-  width: 100px;
+  width: 200px;
 }
 
 /*-----------------------------------*\
