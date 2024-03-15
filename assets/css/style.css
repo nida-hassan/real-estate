@@ -84,6 +84,7 @@
   border-radius: 15px;
 }
 
+
 /*-----------------------------------*\
   #RESET
 \*-----------------------------------*/
@@ -314,7 +315,7 @@ button, a { transition: var(--transition); }
   font-weight: var(--fw-700);
 }
 
-.hero-title { margin-bottom: 20px; }
+/* .hero-title { margin-bottom: 20px; } */
 
 .hero-text {
   color: var(--cadet);
@@ -974,8 +975,6 @@ button, a { transition: var(--transition); }
 /* --------------------------------CONTACT FORM */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
 
-
-
 .container{
     /* width: 60%; */
     /* padding: 45px; */
@@ -1133,7 +1132,7 @@ button, a { transition: var(--transition); }
    * REUSED STYLE
    */
 
-  .container { max-width: 720px; }
+  /* .container { max-width: 720px; } */
 
   .btn {
     --fs-5: 1rem;
@@ -1153,12 +1152,10 @@ button, a { transition: var(--transition); }
    */
 
   .hero-content { max-width: 400px; }
-
-
-
   /**
    * ABOUT
    */
+
 
   .about .section-title { max-width: 30ch; }
 
@@ -1408,11 +1405,11 @@ button, a { transition: var(--transition); }
    * HERO
    */
 
-  .hero-text {
+  /* .hero-text {
     padding-left: 30px;
     max-width: 450px;
     margin-bottom: 40px;
-  }
+  } */
 
 
 
@@ -1451,3 +1448,8 @@ button, a { transition: var(--transition); }
 
 }
 
+@media only screen and (max-width: 600px) {
+  .hero-line{
+    margin-top: 100px;
+  }
+}
